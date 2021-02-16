@@ -1,0 +1,850 @@
+@media only screen and (min-width: 1024px) and (max-width: 1371px) {
+    .fixed-container {
+        max-width: 1024px;
+    }
+
+    .title-container {
+        height: 915px;
+    }
+
+    .title-container .fixed-container {
+        -webkit-box-shadow: inset 0 -10px 50px 50px white;
+                box-shadow: inset 0 -10px 50px 50px white;
+    }
+
+        .title-container__title {
+            -webkit-box-shadow: 0 0 50px 65px rgb(255 255 255 / 80%);
+                    box-shadow: 0 0 50px 65px rgb(255 255 255 / 80%);
+        }
+
+        .signature {
+            font-size: 90px;
+        }
+
+    .about-container__text {
+        margin-left: 50px;
+        width: 40%;
+    }
+
+    .about-container__hidden-panel {
+        padding: 50px;
+    }
+
+    .news-container .fixed-container {
+        padding: 0 40px 50px;
+    }
+
+    .news-item {
+        width: 300px;
+    }
+
+        .news-item__image {
+            width: 300px;
+            
+        }
+
+        .news-item_active {
+            width: 100%;	
+        }
+        
+        .news-item_hidden {
+            width: 0;
+        }
+
+    .news-item__full__text__paragraph__caption {
+        font-size: 30px;
+    }
+    
+    .text__paragraph {
+        font-size: 16px;
+    }
+
+        .news-item__full__img-left, 
+        .news-item__full__img-right {
+            width: 33%;
+        }
+
+        .film-description {
+            font-size: 12px;
+        }
+
+    .filmography__table {
+        font-size: 18px;
+    }
+
+        .filmography__table td {
+            line-height: 20px;
+        }   
+
+            .awards-icons {
+            
+                height: 40px;
+                top: 18px;
+            }
+
+                .filmography_full .awards-icons {
+                    top: 20px;
+                }
+
+    .photosessions-container .fixed-container {
+        padding: 0 30px 50px;
+    }
+    
+    .photo-swiper-button-next,
+    .photo-swiper-button-prev {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .fixed-container {
+        max-width: 100%;
+    }
+
+    .title-container {
+        height: 680px;
+    }
+
+    .title-container .fixed-container {
+        -webkit-box-shadow: inset 0 -10px 20px 20px white;
+                box-shadow: inset 0 -10px 20px 20px white;
+    }
+
+        .menu-list {
+            left: 25px;
+            -webkit-box-shadow: 0 0 75px 56px rgb(255 255 255 / 80%);
+                    box-shadow: 0 0 75px 56px rgb(255 255 255 / 80%);
+        }
+
+        .title-container__title {
+            -webkit-box-shadow: 0 0 45px 45px rgb(255 255 255 / 80%);
+                    box-shadow: 0 0 45px 45px rgb(255 255 255 / 80%);
+        }
+
+        .signature {
+            font-size: 70px;
+        }
+
+        .title-container__title__description {
+            font-size: 30px;
+        }
+
+    .about-container__text {
+        margin-left: 22px;
+        width: 50%;
+    }
+
+    .about-container__photo {
+        width: 50%;
+    }
+
+        .about-container__hidden-panel {
+            padding: 30px;
+        }
+
+    .news-container .fixed-container {
+        padding: 0 30px 50px;
+    }
+
+    .news-item {
+        width: 230px;
+        font-size: 14px;
+    }
+
+        .news-item__image {
+            width: 230px;
+            
+        }
+
+        .news-item__read-more {
+            line-height: 30px;
+            font-size: 18px;
+        }
+
+        .news-item_active {
+            width: 100%;	
+        }
+
+            .news-item_active .news-item__briefly {
+                width: 260px;
+            }
+        
+        .news-item_hidden {
+            width: 0;
+        }
+
+    .news-item__full__text__paragraph__caption {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .text__paragraph {
+        font-size: 16px;
+    }
+
+        .news-item__full__img-left, 
+        .news-item__full__img-right {
+            width: 33%;
+            margin: 15px;
+        }
+
+        .film-description {
+            font-size: 12px;
+        }
+
+    .filmography {
+        width: 50%;
+        -webkit-box-shadow: 0 0 51px 51px white;
+                box-shadow: 0 0 51px 51px white;
+        margin-right: 1%;
+    }
+
+    .filmography_full {
+        width: 100%;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        padding: 20px;
+    }
+
+    .filmography_full .filmography__table {
+		margin-right: 20px;
+	}
+
+        .filmography-container .fixed-container {
+            -webkit-box-shadow: inset 0 -10px 30px 40px white;
+                    box-shadow: inset 0 -10px 30px 40px white;
+        }
+
+        .filmography-container__caption {
+            margin-bottom: 20px;
+        }
+
+        .filmography__read-more { 
+            margin: 10px auto 10px 14px;
+            font-size: 20px;
+        }
+
+        .filmography__table {
+            font-size: 16px;
+        }
+
+            .filmography__table td {
+                padding: 5px 15px;
+                line-height: 20px;
+            }   
+
+            .filmography_full .filmography__table td {
+				padding: 0px 8px;
+			}
+
+                .awards-icons {
+                    height: 30px;
+                    top: 14px;
+                }
+
+                    .globus {
+                        left: -10px;
+                    }
+
+                    .oscar {
+                        left: -29px;
+                    }
+
+                .filmography_full .awards-icons {
+                    top: 15px;
+                    height: 30px;
+                }
+
+                    .filmography_full .globus {
+                        left: -7px;
+                    }
+
+                    .filmography_full .oscar {
+                        left: -19px;
+                    }
+    
+    .photosessions-container .fixed-container {
+        padding: 0 30px 50px;
+    }
+    
+    .photo-swiper-button-next,
+    .photo-swiper-button-prev,
+    .popup__fullscreen-btn {
+        display: none;
+    }
+
+    .footer-container .fixed-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        height: 350px;
+    }
+
+}
+
+@media only screen and (min-width: 540px) and (max-width: 767px) {
+    .fixed-container {
+        width: 100%;
+    }
+
+    .title-container {
+        height: 540px;
+    }
+
+    .caption {
+        font-size: 30px;
+    }
+
+    .title-container .fixed-container {
+        -webkit-box-shadow: inset 0 -10px 20px 20px white;
+                box-shadow: inset 0 -10px 20px 20px white;
+    }
+
+        .menu-mobile {
+            display: block;
+        }
+
+        .title-container__title {
+            -webkit-box-shadow: 0 0 88px 107px rgb(255 255 255 / 80%);
+                    box-shadow: 0 0 88px 107px rgb(255 255 255 / 80%);
+            top: 10%;
+            left: 12%;
+        }
+
+        .signature {
+            font-size: 70px;
+        }
+
+        .title-container__title__name {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+        } 
+
+            .title-container__title__name__surname {
+                position: relative;
+                left: 50px;
+            }
+
+        .title-container__title__description {
+            font-size: 24px;
+        }
+
+    .about-container .fixed-container__visible {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+        .about-container__text {
+            margin: 22px;
+            width: 90%;
+        }
+
+        .about-container__photo {
+            width: 100%;
+            height: 396px;
+        }
+
+        .about-container__hidden-panel {
+            padding: 30px;
+        }
+
+    .news-container .fixed-container {
+        padding: 0 30px 50px;
+    }
+
+    .news {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .news-container__caption {
+        width: 100%;
+    }
+
+    .news-item {
+        width: 480px;
+        font-size: 20px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .news-item__full {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+        .news-item__image {
+            width: 480px;
+        }
+
+        .read-more {
+            line-height: 50px;
+            font-size: 22px;
+        }
+
+        .news-item_active {
+            width: 100%;	
+        }
+
+            .news-item_active .news-item__briefly {
+                width: 260px;
+            }
+        
+        .news-item_hidden {
+            width: 0;
+        }
+
+    .news-item__full__text__paragraph__caption {
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .text__paragraph {
+        font-size: 20px;
+    }
+
+        .news-item__full__img-left, 
+        .news-item__full__img-right {
+            width: 33%;
+            margin: 15px;
+        }
+
+        .film-description {
+            font-size: 12px;
+        }
+
+    .filmography {
+        width: 100%;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        margin: auto;
+        padding: 30px;
+    }
+  
+    .filmography_full {
+        width: 100%;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        padding: 20px;
+    }
+
+    .filmography_full .filmography__table {
+		margin-right: 20px;
+	}
+
+        .filmography-container .fixed-container {
+            -webkit-box-shadow: inset 0 -10px 30px 40px white;
+                    box-shadow: inset 0 -10px 30px 40px white;
+            background-image: none;
+        }
+
+        .filmography-container__caption {
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .filmography_full .filmography-container__caption {
+            width: 100%;
+        }
+
+        .filmography__read-more { 
+            margin: 10px auto 10px 14px;
+        }
+
+        .filmography__table {
+            font-size: 20px;
+            margin: auto;
+            width: 90%;
+        }
+
+            .filmography__table td {
+                padding: 5px 19px;
+                line-height: 20px;
+            }   
+
+            .filmography_full .filmography__table td {
+				padding: 0px 8px;
+			}
+
+                .awards-icons {
+                    height: 50px;
+                    top: 10px;
+                }
+
+                    .globus {
+                        left: -20px;
+                    }
+
+                    .oscar {
+                        left: -50px;
+                    }
+
+                .filmography_full .awards-icons {
+                    top: 10px;
+                }
+
+                    .filmography_full .globus {
+                        left: -20px;
+                    }
+
+                    .filmography_full .oscar {
+                        left: -40px;
+                    }
+
+    .photosessions-container .fixed-container {
+        padding: 0 30px 50px;
+    }
+
+        .photosessions-container__caption {
+            width: 100%;
+        }
+
+        .album-swiper-slide {
+            font-size: 20px;
+            width: 400px;
+            height: 400px;
+        }
+
+            .album-swiper-slide.swiper-slide-active {
+                height: 400px;
+            }
+
+            .album-swiper-slide__image{
+                width: 100%;
+                height: 400px;
+            }
+
+    .photo-swiper-button-next,
+    .photo-swiper-button-prev,
+    .popup__fullscreen-btn,
+    .menu-list {
+        display: none;
+    }
+
+    .footer-container .fixed-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        height: 350px;
+    }
+}
+
+@media only screen and (max-width: 539px) {
+    .fixed-container {
+        width: 100%;
+    }
+
+    .title-container {
+        height: 100%;
+    }
+
+    .caption {
+        font-size: 30px; 
+    }
+
+    .title-container .fixed-container {
+        background-position-x: 82%;
+        background-position-y: 0%;
+        background-attachment: fixed;
+        background-size: 1330px;
+        -webkit-box-shadow: inset 0 0px 60px 41px white;
+                box-shadow: inset 0 0px 60px 41px white;
+    }
+
+        .menu-mobile {
+            display: block;
+        }
+            .menu-mobile-btn {
+                top: 10px;
+                left: 10px;
+            }
+            
+        .title-container__title {
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            background-color: transparent;
+            top: 1%;
+            left: 6%;
+            margin:auto;
+        }
+
+        .signature {
+            font-size: 38px; 
+            font-weight: 700;
+        }
+
+            .title-container__title__name__surname {
+                position: relative;
+                
+            }
+
+        .title-container__title__description {
+            font-size: 20px;
+        }
+
+    .about-container .fixed-container__visible {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+        .about-container__text {
+            margin: 22px;
+            width: 90%;
+        }
+
+        .about-container__photo {
+            width: 100%;
+            height: 250px;
+        }
+
+        .about-container__hidden-panel {
+            padding: 30px;
+        }
+
+    .news-container .fixed-container {
+        padding: 0 30px 50px;
+    }
+
+    .news {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    .news-container__caption {
+        width: 100%;
+    }
+
+    .news-item {
+        width: 100%;
+        font-size: 15px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .news-item__full {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+        .news-item__image {
+            width: 100%;
+        }
+
+        .read-more {
+            line-height: 50px;
+            font-size: 17px;
+        }
+
+        .news-item_active {
+            width: 100%;	
+        }
+
+            .news-item_active .news-item__briefly {
+                width: 260px;
+            }
+        
+        .news-item_hidden {
+            width: 0;
+        }
+
+    .news-item__full__text__paragraph__caption {
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+    
+    .text__paragraph {
+        font-size: 14px;
+    }
+
+        .news-item__full__img-left, 
+        .news-item__full__img-right {
+            width: 100%;
+            display: block;
+            margin: 0 0 10px 0;
+            float: none;
+        }
+
+        .film-description {
+            font-size: 12px;
+        }
+
+    .filmography {
+        width: 100%;
+        -webkit-box-shadow: 0 0 51px 51px white;
+                box-shadow: 0 0 51px 51px white;
+        margin: auto;
+        padding: 30px;
+    }
+  
+    .filmography_full {
+        width: 100%;
+        -webkit-box-shadow: none;
+                box-shadow: none;
+        padding: 20px;
+    }
+
+    .filmography_full .filmography__table {
+		margin-right: 20px;
+	}
+
+        .filmography-container .fixed-container {
+            -webkit-box-shadow: inset 0 -10px 30px 40px white;
+                    box-shadow: inset 0 -10px 30px 40px white;
+            background-image: none;
+        }
+
+        .filmography-container__caption {
+            margin-bottom: 40px;
+            width: 100%;
+        }
+
+        .filmography_full .filmography-container__caption {
+            width: 100%;
+        }
+
+        .filmography__read-more { 
+            margin: 10px auto 10px 14px;
+        }
+
+        .filmography__table {
+            font-size: 14px;
+            margin: auto;
+            width: 90%;
+        }
+
+            .filmography__table td {
+                padding: 16px 13px;
+                line-height: 20px;
+            }   
+
+            .filmography_full .filmography__table td {
+				padding: 0px 3px;
+			}
+
+                .awards-icons {
+                    height: 40px;
+                    top: 18px;
+                }
+
+                    .globus {
+                        left: -8px;
+                    }
+
+                    .oscar {
+                        left: -29px;
+                    }
+
+                .filmography_full .awards-icons {
+                    display: none;
+                }
+
+    .photosessions-container .fixed-container {
+        padding: 0 10px 50px;
+    }
+
+        .photosessions-container__caption {
+            width: 100%;
+        }
+
+        .album-swiper-slide {
+            font-size: 14px;
+            width: 280px;
+            height: 280px;
+        }
+
+        .album-swiper-slide__read-more {
+            line-height: 17px;
+        }
+
+            .album-swiper-slide.swiper-slide-active {
+                height: 300px;
+            }
+
+            .album-swiper-slide__image{
+                width: 100%;
+                height: 300px;
+            }
+
+    .photo-swiper-button-next,
+    .photo-swiper-button-prev,
+    .popup__fullscreen-btn,
+    .menu-list,
+    .footer-container__contact__fansite {
+        display: none;
+    }
+
+    .footer-container .fixed-container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        height: 400px;
+        padding: 10px;
+    }
+
+    .photo-swiper-pagination {
+        bottom: 92%;
+        left: 5%;
+    }
+
+    .popup-btn {
+        width: 25px;
+        height: 25px;
+        font-size: 15px;
+    }
+
+    .popup__download-btn {
+        right: 48px;
+    }
+
+    .popup__title {
+        font-size: 20px;
+    }
+
+    .film-name-translation {
+        font-size: 12px;
+    }
+}

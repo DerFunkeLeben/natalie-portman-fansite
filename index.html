@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+	<title>Natalie Portman fan-site</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">
+
+	<script src="js/font-awesome.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/script.js"></script>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+	<link rel="manifest" href="icons/site.webmanifest">
+	<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#31559f">
+	<link rel="shortcut icon" href="icons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#9f00a7">
+	<meta name="msapplication-config" content="icons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+</head>
+<body>
+	<div class="popup-container">
+		<div class="popup">
+			<button type="button" class="popup-btn popup__close-btn"> <i class="fas fa-times popup-btn__icon"></i> </button>
+			<button type="button" class="popup-btn popup__download-btn"> <i class="fas fa-chevron-down popup-btn__icon"></i> </button>
+			<button type="button" class="popup-btn popup__fullscreen-btn"> <i class="fas fa-expand popup-btn__icon"></i> </button>
+			<div class="swiper-pagination photo-swiper-pagination"></div>
+			<h1 class="popup__title"></h1>
+			<div class="swiper-container photo-swiper">
+				<div class="swiper-wrapper"></div>
+				<div class="swiper-button-next photo-swiper-button-next"></div>
+				<div class="swiper-button-prev photo-swiper-button-prev"></div>
+			</div>
+		</div>
+	</div>
+
+	<section class="title-container" aria-label="titlemain">
+		<div class="fixed-container">
+			<nav class="menu-desktop">
+				<ul class="menu-list list">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="#" class="about-link">О Натали</a></li>
+					<li><a href="#" class="news-link">Новости</a></li>
+					<li><a href="#" class="photo-link">Фотосессии</a></li>
+					<li><a href="#" class="films-link">Фильмография</a></li>
+				</ul>
+			</nav>
+			<nav class="menu-mobile">
+				<input type="checkbox" id="hmt" class="hidden-menu-ticker">
+				<label class="menu-mobile-btn" for="hmt">
+					<span class="first"></span>
+					<span class="second"></span>
+					<span class="third"></span>
+				</label>
+				<ul class="hidden-menu list">
+					<li><a href="index.html" class="hidden-menu-link">Главная</a></li>
+					<li><a href="#" class="about-link hidden-menu-link">О Натали</a></li>
+					<li><a href="#" class="news-link hidden-menu-link">Новости</a></li>
+					<li><a href="#" class="photo-link hidden-menu-link">Фотосессии</a></li>
+					<li><a href="#" class="films-link hidden-menu-link">Фильмография</a></li>
+				</ul>
+			</nav>
+
+			<div class="title-container__title">
+				<h1 class="title-container__title__name signature"><span>Natalie</span> <span class="title-container__title__name__surname"> Portman</span></h1> 
+				<h2 class="title-container__title__description">фан-клуб актрисы</h2>
+			</div>
+		</div>
+	</section>
+
+	<article class="about-container" id="about-container" aria-label="about">
+		<div class="fixed-container fixed-container__visible">
+			<div class="about-container__photo"></div>
+			<div class="about-container__text">
+				<h2 class="about-container__text__caption caption">О Натали</h2>
+				<p class="about-container__text__paragraph text__paragraph">Актриса театра и кино, сценарист, продюссер, кинорежиссер.</p>
+				<p class="about-container__text__paragraph text__paragraph">Обладательница премий "Оскар", "Золотой глобус", BAFTA и "Сатурн", звезда фильмов "Леон", "Тор", "Звездные войны", "Черный лебедь" и др.</p>
+				<p class="about-container__text__paragraph text__paragraph">Отличница Гарварда, в совершенстве владеющая шестью языками. Она начала свой творческий путь в 10 лет, а уже в 12 получила первую главную роль, став самым востребованным ребенком-актером.</p>
+				<button class="about-container__text__read-more read-more accordion_show about-container__accordion">Читать далее &#8642;</button>
+				<button class="about-container__text__read-more read-more accordion_hide about-container__accordion">Скрыть &#8638;</button>
+			</div>
+		</div>
+		<div class="fixed-container fixed-container__hidden">
+			<div class="about-container__hidden-panel accordion_hidden-panel" id="about-container__hidden-panel">
+				<div class="about-container__hidden-panel__text">
+					<p class="about-container__text__paragraph text__paragraph">Родилась Натали Портман в столице Израиля - Иерусалиме, 9 июня 1981 года, став первым и единственным ребенком в семье актрисы из США и медика из Израиля. Еще до того как Натали отпраздновала свой четвертый день рождения, ее семья перебирается в Вашингтон. Этот переезд был не последним, однако в конечном итоге родители Натали окончательно обосновались в Нью-Йорке, где актриса и провела все свое детство.</p>
+					<p class="about-container__text__paragraph text__paragraph">Во время учебы в школе Натали отличается умом и прилежанием, благодаря чему по окончанию, получает возможность продолжить обучение в Гарварде, на факультете психологии. Натали не преминула воспользоваться этой возможностью, и уже в 2003 году получила диплом одного из наиболее престижных учебных заведений Америки. Еще в студенческие годы, уже тогда известная Натали, заявляла, что роли в кино будет подбирать очень тщательно, не зря же она выбрала факультет психологии.</p>
+					<p class="about-container__text__paragraph text__paragraph">Весьма переборчивой Натали была с детства, так в 11 лет на предложение, работавшего на кинопроизводстве агента, поработать в модельном бизнесе, девочка отвечает отказом, заявив, что она будет сниматься только в кино. Первый же фильм с участием Натали - «Леон» (1994) Люка Бессона, производит в кинематографе эффект разорвавшейся бомбы. Люк Бессон, заприметивший Натали, долго сомневался по ее поводу, ведь на тот момент девочке было всего 12 лет. Пожалеть о выборе, сделанном в конечном итоге в пользу Натали, Люку Бессону не пришлось. Двенадцатилетняя актриса великолепно играет, оставшуюся сиротой по вине продажного полицейского, помощницу киллера по имени Леон (Жан Рено).</p>
+					<p class="about-container__text__paragraph text__paragraph">Затем последовали роли в таких суперхитах, как «Схватка» (1995), «Красивые девушки» (1996) и «Марс атакует!» (1996). Однако статус одной из лучших голливудских актрис и мировая известность к Портман приходят только после работы в фильме «Звездные войны. Эпизод I: Скрытая угроза».</p>
+					<p class="about-container__text__paragraph text__paragraph">Единогласное одобрение от кинокритиков получают и две ее следующие работы, в фильмах: «Где угодно, только не здесь» (1999) и «Там где сердце» (2000). Свою первую  номинацию на Оскар (лучшая второстепенная роль) Портман получает за работу в картине «Близость» (2004)». За главную роль в картине «„V" значит Вендетта» (2005) Джеймса Мактейга, актрисе вручили премию «Сатурн» американской академии фантастических фильмов.</p>
+					<p class="about-container__text__paragraph text__paragraph">В ленте Милоша Формана «Призраки Гойи» (2006) Портман снялась в роли Инесс Бельбатуа, музы Франциско Гойи. Высокие оценки критиков получила второстепенная роль актрисы в картине Вонг Карвая «Мои черничные ночи» (2007). Отмечалось, что Натали здесь наконец-то превратилась из ребенка в настоящую женщину. После выхода исторической ленты «Еще одна из рода Болейн» (2008, роль Анны Болейн) журнал Blender не просто подтвердил, что это превращение состоялось, но и назвал актрису одной из самых горячих женщин кино. В киноальманахе «Нью-Йорк, я люблю тебя» (2008) Натали сыграла главную роль в одной из новелл и выступила режиссером другой. За роль балерины в картине «Черный лебедь» (2010) Потрман получила «Золотой глобус» и «Оскар». В дальнейшем последовал целый ряд не менее успешных работ, в которых актриса еще более расширила свое амплуа, снявшись в паре веселых комедий.</p>
+				</div>
+				<button class="about-container__hidden-panel__hide read-more about-container__accordion">Скрыть &#8638;</button>
+			</div>
+		</div>
+	</article>
+
+	<div class="decoration-container">
+		<div class="fixed-container">
+			<h1 class="decoration-container__decoration signature decoration__firstname">Natalie</h1>
+			<h1 class="decoration-container__decoration signature decoration__surname">Portman</h1>
+		</div>
+	</div>
+
+	<article class="news-container" id="news-container" aria-label="news">
+		<div class="fixed-container">
+			<h2 class="news-container__caption caption">Новости</h2>
+			<div class="news">
+				<div class="news-item">
+					<div class="news-item__briefly">
+						<p class="news-item__date">25.09.2020</p>
+						<div class="news-item__image img-fables open-news-item__full"></div>
+						<p class="news-item__description-briefly">Натали выпустила серию детских сказок. В книге будут истории...</p>
+						<button class="news-item__read-more read-more open-news-item__full">Подробнее &#8640;</button>
+					</div>
+					<div class="news-item__full">
+							<p class="news-item__full__text__paragraph text__paragraph">Натали Портман выпустила детскую книгу с гендерно-инклюзивными версиями сказок, сообщает Associated Press.
+							<p class="news-item__full__text__paragraph text__paragraph">Книга получила название «Басни Натали Портман». В ней обладательница премии «Оскар» переработала под современную культуру сюжеты трех классических сказок: «Черепаха и заяц», «Три поросенка» и «Мышь городская и мышь деревенская».</p>
+							<p class="news-item__full__text__paragraph text__paragraph">«Детские книги занимают особое место в нашей жизни, потому что мы читаем их снова и снова, как никакие другие книги. Они могут прививать информацию и ценности как детям, так и родителям. И когда я читала эти книги, я была поражена тем, что в классических сказках преобладали мужские персонажи», — рассказала актриса.</p>
+							<p class="news-item__full__text__paragraph text__paragraph">По словам Портман, она постаралась сохранить и обновить уже знакомые всем истории так, чтобы они «включали в себя множество гендеров, а не отражали преимущественно мужской мир». Актриса говорит, что стремилась сделать упор на таких человеческих ценностях, как сочувствие, доброта и забота о планете.</p>
+							<p class="news-item__full__text__paragraph text__paragraph">Портман называет свою книгу своего рода «любовной запиской» для своих двоих детей. В ней она выражает надежду на то, как они будут вести себя в этом мире.</p>
+					</div>
+				</div>
+				<div class="news-item">
+					<div class="news-item__briefly">
+						<p class="news-item__date">28.08.2020</p>
+						<div class="news-item__image img-love open-news-item__full"></div>
+						<p class="news-item__description-briefly">Натали Портман поделилась редкими снимками с семьей</p>
+						<button class="news-item__read-more read-more open-news-item__full">Подробнее &#8640;</button>
+					</div>
+					<div class="news-item__full">
+						<p class="news-item__full__text__paragraph text__paragraph">Если говорить о личной жизни, то 38-летняя Натали Портман в этом смысле является одной из самых закрытых голливудских звезд. Она редко рассказывает о муже Бенжамене Мильпье и не показывает своих детей, восьмилетнего сына Алефа и трехлетнюю дочь Амалию. Однако вчера, в честь Дня матери, она сделала исключение. Звезда опубликовала трогательный снимок, на котором целует и обнимает сына и дочь.</p>
+						<img src="img/family.jpg" alt="family" class="news-item__full__img-right">
+						<p class="news-item__full__text__paragraph text__paragraph">Фото, скорее всего, было снято давно, так как на нем Амалия еще совсем маленькая.</p>
+						<p class="news-item__full__text__paragraph text__paragraph">Автором снимка стал 42-летний супруг Натали — хореограф и танцовщик Бенжамен Мильпье. В этом году пара отметит восьмую годовщину со дня свадьбы. Торжество Натали и Бенжамена было тайным и прошло в одном из живописных районов на побережье в Центральной Калифорнии. На мероприятии присутствовали родные и друзья пары, в том числе и дочь президента США Дональда Трампа Иванка, которая в тот день публиковала в твиттере праздничные снимки.</p>
+						<p class="news-item__full__text__paragraph text__paragraph">К слову, супругов свел кинематограф — они познакомились на съемках фильма "Черный лебедь" (Black Swan), за роль в котором Портман получила премию "Оскар".</p>
+					</div>
+				</div>
+				<div class="news-item">
+					<div class="news-item__briefly">
+						<p class="news-item__date">11.08.2020</p>
+						<div class="news-item__image img-barber open-news-item__full"></div>
+						<p class="news-item__description-briefly">Ей подвластно все: лучшие роли Натали Портман</p>
+						<button class="news-item__read-more read-more open-news-item__full">Подробнее &#8640;</button>
+					</div>
+					<div class="news-item__full">
+						<div class="news-item__full__text__paragraph text__paragraph news-item__full__annotaion">
+							Натали Портман прославилась на весь мир благодаря фильму «Леон» Люка Бессона, а затем были «Звёздные войны» и «Чёрный лебедь», за роль в котором она получила премию «Оскар». В нашем материале мы собрали наиболее яркие картины, в которых снялась американская актриса.
+						</div>
+						<div class="news-item__full__text__paragraph text__paragraph news-item__full__film">
+							<img src="img/blackswan.jpg" alt="blackswan" class="news-item__full__img-left">
+							<h2 class="caption news-item__full__text__paragraph__caption">Черный лебедь 
+								<span class="film-name-translation film-description">(Black Swan)</span>
+							</h2>
+							<p class="film-name-translation film-description">2010 / Драма, Триллер</p>
+							Главная героиня – Нина – всю жизнь работала, чтобы получить главную роль в «Лебедином озере». И вот её мечта осуществляется – режиссёр объявляет, что именно она станет лицом постановки. Жажда славы и успеха делает с людьми странные вещи, доводит до помешательства и лишает сна. Из-за козней конкуренток, постоянного давления матери и режиссёра, жаждущего затащить девушку в постель, Нина перестаёт различать реальность и вымысел: кошмары доводят её до помешательства. Стоит ли цель приложенных усилий?
+						</div>
+						<div class="news-item__full__text__paragraph text__paragraph news-item__full__film">
+							<img src="img/leon.jpg" alt="leon" class="news-item__full__img-right">
+							<h2 class="caption news-item__full__text__paragraph__caption">Леон 
+								<span class="film-name-translation film-description">(Leon)</span>
+							</h2>
+							<p class="film-name-translation film-description">1994 / Драма, Криминал, Триллер</p>
+							Матёрый киллер Леон, о котором говорят, что он не знает пощады, знакомится с юной очаровательной соседкой Матильдой, семью которой убили «грязные» полицейские. И хотя сам Леон от встречи не восторге, он смиряется с тем, что девочка теперь на его попечении. Матильда, желая отомстить, просит Леона научить её ремеслу убийства, а взамен предлагает ему помощь по дому.
+						</div>
+						<div class="news-item__full__text__paragraph text__paragraph news-item__full__film">
+							<img src="img/vforvendetta.jpg" alt="vforvendetta" class="news-item__full__img-left">
+							<h2 class="caption news-item__full__text__paragraph__caption">V - значит Вендетта  
+								<span class="film-name-translation film-description">(V for Vendetta)</span>
+							</h2>
+							<p class="film-name-translation film-description">2005 / Драма, Триллер, Боевик</p>
+							Далёкое будущее. После эпидемии смертельного вируса, из-за которой в Великобритании начались беспорядки, к власти приходит жестокий канцлер. Чтобы гражданам, и так пострадавшим от болезни, не было дела до выступлений против нового правительства, он вводит комендантский час, кругом шпионы и стукачи. Внезапно в столице появляется борец за свободу в маске, называющий себя V (Ви) – он объявляет о начале гражданской войны. Неизвестный в одной из заварушек спасает жизнь сотруднице государственного телеканала British Television Network Иви Хэммонд...
+						</div>
+						<div class="news-item__full__text__paragraph text__paragraph news-item__full__film">
+							<img src="img/starwars.jpg" alt="starwars" class="news-item__full__img-right">
+							<h2 class="caption news-item__full__text__paragraph__caption">
+								Звёздные войны: Эпизод I - Скрытая угроза
+								<span class="film-name-translation film-description">(Star&nbsp;Wars:&nbsp;Episode&nbsp;I&nbsp;-&nbsp;The&nbsp;Phantom&nbsp;Menace)</span>
+							</h2>
+							<p class="film-name-translation film-description">1999 / Приключения, Фэнтези, Боевик</p>
+							Во второй трилогии киносерии «Звёздные войны» Натали Портман исполнила роль Падме Амидаллы – королевы планеты Набу и будущей невесты Энакина Скайуокера, более известного как Дарт Вейдер. Интересно, что до начала съёмок Портман не видела ни одного фильма этой космической саги, поэтому, по её словам, навёрстывать пришлось в процессе работы.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+	<div class="decoration-container">
+		<div class="fixed-container">
+			<h1 class="decoration-container__decoration signature">Filmograph</h1>
+		</div>
+	</div>
+
+	<div class="filmography-container" id="filmography-container">
+		<div class="fixed-container">
+			<div class="filmography">
+				<h2 class="filmography-container__caption caption">Фильмография</h2>
+				<div class="filmography__tables">
+					<table class="filmography__table">
+						<tr class="film-item_hidden">
+							<td>2019</td>
+							<td>Люси&nbsp;в&nbsp;небесах <span class="film-name-translation">(Lucy&nbsp;in&nbsp;the&nbsp;sky)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2019</td>
+							<td>Мстители:&nbsp;Финал <span class="film-name-translation">(Avengers:&nbsp;Endgame)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2018</td>
+							<td>Смерть&nbsp;и&nbsp;жизнь Джона&nbsp;Ф.&nbsp;Донована <span class="film-name-translation">(The&nbsp;Death&nbsp;&&nbsp;Life of&nbsp;John&nbsp;F.&nbsp;Donovan)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>2018</td>
+							<td>Голос&nbsp;люкс <span class="film-name-translation">(Vox&nbsp;Lux)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2017</td>
+							<td>Аннигиляция <span class="film-name-translation">(Annihilation)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2016</td>
+							<td>Планетариум <span class="film-name-translation">(Planetarium)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>2016</td>
+							<td>Джеки <span class="film-name-translation">(Jackie)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2015</td>
+							<td>Расцвет бесчувственных&nbsp;ублюдков <span class="film-name-translation">(The&nbsp;Heyday&nbsp;of the&nbsp;Insensitive&nbsp;Bastards)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2015</td>
+							<td>Джейн&nbsp;берет&nbsp;ружье <span class="film-name-translation">(Jane&nbsp;Got&nbsp;a&nbsp;Gun)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2015</td>
+							<td>Между&nbsp;нами&nbsp;музыка <span class="film-name-translation">(Song&nbsp;to&nbsp;Song)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2015</td>
+							<td>Повесть&nbsp;о&nbsp;любви&nbsp;и&nbsp;тьме <span class="film-name-translation">(А&nbsp;Tale&nbsp;of&nbsp;Love&nbsp;and&nbsp;Darkness)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>2014</td>
+							<td>Рыцарь&nbsp;кубков <span class="film-name-translation">(Knight&nbsp;of&nbsp;Cups)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2013</td>
+							<td>Тор&nbsp;2:&nbsp;Царство&nbsp;тьмы <span class="film-name-translation">(Thor:&nbsp;The&nbsp;Dark&nbsp;World)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>2011</td>
+							<td>Тор&nbsp;<span class="film-name-translation">(Thor)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2010</td>
+							<td>Больше&nbsp;чем&nbsp;секс <span class="film-name-translation">(No&nbsp;Strings&nbsp;Attached)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2010</td>
+							<td>Хешер <span class="film-name-translation">(Hesher)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2010</td>
+							<td>Я&nbsp;все&nbsp;еще&nbsp;здесь <span class="film-name-translation">(I'm&nbsp;still&nbsp;here)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2010</td>
+							<td>Храбрые&nbsp;перцем <span class="film-name-translation">(Your&nbsp;Highness)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2010</td>
+							<td>В&nbsp;поисках&nbsp;Теда&nbsp;Демми <span class="film-name-translation">(In&nbsp;Search&nbsp;of&nbsp;Ted&nbsp;Demme)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>
+								<img src="icons/oscar.png" alt="oscar" class="awards-icons oscar">
+								<img src="icons/goldenglobus.png" alt="globus" class="awards-icons globus">
+								2010
+							</td>
+							<td>Черный&nbsp;лебедь <span class="film-name-translation">(Black&nbsp;Swan)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2010</td>
+							<td>Любовь&nbsp;и&nbsp;прочие&nbsp;обстоятельства <span class="film-name-translation">(In&nbsp;Search&nbsp;of&nbsp;Ted&nbsp;Demme)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2009</td>
+							<td>Братья <span class="film-name-translation">(Brothers)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>2009</td>
+							<td>Нью-Йорк,&nbsp;я&nbsp;люблю&nbsp;тебя <span class="film-name-translation">(New&nbsp;York,&nbsp;I&nbsp;Love&nbsp;You)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>2008</td>
+							<td>Еще&nbsp;одна&nbsp;из&nbsp;рода&nbsp;Балейн <span class="film-name-translation">(The&nbsp;Other&nbsp;Boleyn&nbsp;Girl)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2007</td>
+							<td>Поезд&nbsp;на&nbsp;Дарджилинг. Отчаянные&nbsp;путешественники <span class="film-name-translation">(The&nbsp;Darjeeling&nbsp;Limited)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2007</td>
+							<td>Мои&nbsp;чернильные&nbsp;ночи <span class="film-name-translation">(My&nbsp;Blueberry&nbsp;Nights)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2007</td>
+							<td>Лавка&nbsp;чудес <span class="film-name-translation">(Mr.&nbsp;Magorium's&nbsp;Wonder&nbsp;Emporium)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2006</td>
+							<td>Призраки&nbsp;Гойи <span class="film-name-translation">(Goya's&nbsp;Ghosts)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>2005</td>
+							<td>V&nbsp;-&nbsp;значит&nbsp;Вендетта <span class="film-name-translation">(V&nbsp;for&nbsp;Vendetta)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2006</td>
+							<td>Париж,&nbsp;я&nbsp;люблю&nbsp;тебя <span class="film-name-translation">(Paris,&nbsp;je&nbsp;t'aime)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2005</td>
+							<td>Домино <span class="film-name-translation">(Domino&nbsp;One)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2005</td>
+							<td>Свободная&nbsp;зона <span class="film-name-translation">(Free&nbsp;Zone)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2005</td>
+							<td>Звёздные&nbsp;войны: Эпизод&nbsp;3&nbsp;— Месть&nbsp;Ситхов <span class="film-name-translation">(Star&nbsp;Wars: Episode&nbsp;III&nbsp;- Revenge&nbsp;of&nbsp;the&nbsp;Sith)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>
+								<img src="icons/goldenglobus.png" alt="globus" class="awards-icons globus">
+								2004
+							</td>
+							<td>Близость <span class="film-name-translation">(Closer)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2003</td>
+							<td>Страна&nbsp;садов <span class="film-name-translation">(Garden&nbsp;State)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2003</td>
+							<td>Холодная&nbsp;гора <span class="film-name-translation">(Cold&nbsp;Mountain)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2002</td>
+							<td>Звёздные&nbsp;войны: Эпизод&nbsp;2&nbsp;— Атака&nbsp;клонов <span class="film-name-translation">(Star&nbsp;Wars: Episode&nbsp;II&nbsp;- Attack&nbsp;of&nbsp;the&nbsp;Clones)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2001</td>
+							<td>Образцовый&nbsp;самец <span class="film-name-translation">(Zoolander)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>2000</td>
+							<td>Там,&nbsp;где&nbsp;сердце <span class="film-name-translation">(Where&nbsp;the&nbsp;Heart&nbsp;Is)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>1999</td>
+							<td>Где&nbsp;угодно,&nbsp;только&nbsp;не&nbsp;здесь <span class="film-name-translation">(Anywhere&nbsp;But&nbsp;Here)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>1999</td>
+							<td>Звёздные&nbsp;войны: Эпизод&nbsp;1&nbsp;— Скрытая&nbsp;угроза <span class="film-name-translation">(Star&nbsp;Wars: Episode&nbsp;I&nbsp;- The&nbsp;Phantom&nbsp;Menace)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>1996</td>
+							<td>Марс&nbsp;атакует! <span class="film-name-translation">(Mars&nbsp;Attacks!)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>1996</td>
+							<td>Все&nbsp;говорят,&nbsp;что&nbsp;я&nbsp;люблю&nbsp;тебя <span class="film-name-translation">(Everyone&nbsp;Says&nbsp;I&nbsp;Love&nbsp;You)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>1996</td>
+							<td>Красивые&nbsp;девушки <span class="film-name-translation">(Beautiful&nbsp;Girls)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>1995</td>
+							<td>Схватка <span class="film-name-translation">(Heat)</span></td>
+						</tr>
+						<tr class="film-item_hidden">
+							<td>1994</td>
+							<td>Развитие <span class="film-name-translation">(Developing)</span></td>
+						</tr>
+						<tr class="film-item_visible">
+							<td>1994</td>
+							<td>Леон <span class="film-name-translation">(Leon)</span></td>
+						</tr>
+					</table>
+				</div>
+				<button class="filmography__read-more read-more">Смотреть все &RightArrow;</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="decoration-container">
+		<div class="fixed-container">
+			<h1 class="decoration-container__decoration signature decoration__fansite">Fansite</h1>
+		</div>
+	</div>
+
+	<div class="photosessions-container" id="photosessions-container">
+		<div class="fixed-container">
+			<h2 class="photosessions-container__caption caption">Фотосессии</h2>
+			<div class="swiper-container album-swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide album-swiper-slide">
+						<div class="album-swiper-slide__image open-album-2018" style="background-image: url('img/2018.jpg')"></div>
+						<div class="album-swiper-slide__description">
+							<span class="album-swiper-slide__year">2018</span>
+							<button class="album-swiper-slide__read-more read-more open-album-2018">Смотреть &RightArrow;</button>
+						</div>
+					</div>
+					<div class="swiper-slide album-swiper-slide">
+						<div class="album-swiper-slide__image open-album-2017" style="background-image: url('img/2017.jpg')"></div>
+						<div class="album-swiper-slide__description">
+							<span class="album-swiper-slide__year">2017</span>
+							<button class="album-swiper-slide__read-more read-more open-album-2017">Смотреть &RightArrow;</button>
+						</div>
+					</div>
+					<div class="swiper-slide album-swiper-slide">
+						<div class="album-swiper-slide__image open-album-2016" style="background-image: url('img/2016.jpg')"></div>
+						<div class="album-swiper-slide__description">
+							<span class="album-swiper-slide__year">2016</span>
+							<button class="album-swiper-slide__read-more read-more open-album-2016">Смотреть &RightArrow;</button>
+						</div>
+					</div>
+					<div class="swiper-slide album-swiper-slide">
+						<div class="album-swiper-slide__image open-album-2015" style="background-image: url('img/2015.jpg')"></div>
+						<div class="album-swiper-slide__description">
+							<span class="album-swiper-slide__year">2015</span>
+							<button class="album-swiper-slide__read-more read-more open-album-2015">Смотреть &RightArrow;</button>
+						</div>
+					</div>
+					<div class="swiper-slide album-swiper-slide">
+						<div class="album-swiper-slide__image open-album-2014" style="background-image: url('img/2014.jpg')"></div>
+						<div class="album-swiper-slide__description">
+							<span class="album-swiper-slide__year">2014</span>
+							<button class="album-swiper-slide__read-more read-more open-album-2014">Смотреть &RightArrow;</button>
+						</div>
+					</div>
+				</div>
+			  </div>
+		</div>
+	</div>
+
+	<div class="fixed-container">
+		<div class="end-of-main"></div>
+	</div>
+
+	<footer class="footer-container">
+		<div class="fixed-container">
+			<div class="footer-container__contact">
+				<h2 class="footer-container__contact__caption caption">Присоединяйтесь к&nbsp;нам!</h2>
+				<ul class="list social-media">
+					<li><a href="https://www.instagram.com/natalieportman" class="social-icons instagram-icon" target="_blank">instagram</a></li>
+					<li><a href="https://t.me/Natalie_Portman" class="social-icons telegram-icon" target="_blank">telegram</a></li>
+					<li><a href="https://vk.com/n_portman" class="social-icons vk-icon" target="_blank">vkontakte</a></li>
+				</ul>
+				<h3 class="footer-container__contact__fansite">Официальный фансайт Натали Портман</h3>
+			</div>
+			<nav class="footer-container__menu">
+				<ul class="footer-container__menu__menu-list list">
+					<li><a href="#" class="news-link">Новости</a></li>
+					<li><a href="#" class="about-link">О Натали</a></li>
+					<li><a href="#" class="photo-link">Фотосессии</a></li>
+					<li><a href="#" class="films-link">Фильмография</a></li>
+					<li><a href="#">Форум</a></li>
+					<li><a href="#">Связь с администратором</a></li>
+				</ul>
+			</nav>
+		</div>
+
+	</footer>
+
+</body>
+</html>
